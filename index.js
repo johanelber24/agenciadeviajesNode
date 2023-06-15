@@ -4,7 +4,7 @@ import db from './config/db.js';
 
 const app = express();
 
-// Conectar la BD
+// Conectar la Base de Datos
 db.authenticate()
     .then( () => console.log('Base de datos conectada') )
     .catch( error => console.log(error) )
